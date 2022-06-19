@@ -17,4 +17,8 @@ h1 {
 
 ul{
     list-style-type: square;
+    
+}
+ul :nth-child(odd){
+    background-color: coral;
 }

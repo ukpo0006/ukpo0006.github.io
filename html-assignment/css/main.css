@@ -10,3 +10,7 @@ header, footer {
 h1 {
     color: rgb(226, 229, 230);
 }
+
+#myimage{
+    box-shadow: 0 0 2px 1px black;
+}

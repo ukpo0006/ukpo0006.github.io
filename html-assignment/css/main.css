@@ -7,8 +7,8 @@ header, footer {
     background-color: bisque;
 }
 
-h1 {
-    color: rgb(226, 229, 230);
+.h1 {
+    color: rgb(7, 49, 64);
 }
 
 #myimage{
@@ -21,4 +21,14 @@ ul{
 }
 ul :nth-child(odd){
     background-color: coral;
+}
+
+a:link{
+    text-decoration: none;
+    background-color: grey;
+    border: 4px 2px;
+}
+
+a:hover{
+    background-color: white;
 }

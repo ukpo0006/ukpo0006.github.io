@@ -7,7 +7,7 @@ body{
     position:relative;
     text-align: center;
 }
-/* Centre text */
+/* Centres text */
 .Lonefish{  
 color: white;
 text-align: center;
@@ -15,6 +15,14 @@ position: absolute;
 top: 70%;
 left: 40%;
 }
-nav{
-
+/* navigation position and spacing */
+ul{
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+li{
+    float: left ;
+    display: inline-block;
+    padding: 20px 150px;
 }

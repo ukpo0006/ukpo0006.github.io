@@ -27,3 +27,10 @@ li{
     display: inline-block;
     padding: 20px 150px;
 }
+/* image size and text wrap */
+.starfish{
+    float: left;
+    /* height: 15%; */
+    width: 15%;
+    padding: 0.5% 0.5%
+}

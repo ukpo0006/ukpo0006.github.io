@@ -1,3 +1,5 @@
+
+
 body{
      font-family: Arial, Helvetica, sans-serif;
      background-color:  #aad4cf;
@@ -16,7 +18,7 @@ top: 70%;
 left: 40%;
 margin: 0 auto 0 auto;
 }
-/* navigation position and spacing */
+/*adds navigation position and spacing */
 .post{
 margin: 0;
 padding: 0;
@@ -27,9 +29,14 @@ overflow: hidden;
     display: inline-block;
     padding: 20px 140px;
 }
-/* image size and text wrap */
+/*adds image size and text wrap */
 .starfish{
     float: left;
     width: 15%;
     padding: 0.5% 0.5%
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
 }

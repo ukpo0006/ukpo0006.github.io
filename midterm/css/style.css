@@ -1,5 +1,4 @@
 
-
 body{
      font-family: Arial, Helvetica, sans-serif;
      background-color:  #aad4cf;
@@ -27,7 +26,7 @@ overflow: hidden;
 .list{
     float: left ;
     display: inline-block;
-    padding: 20px 140px;
+    padding: 20px 120px;
 }
 /*adds image size and text wrap */
 .starfish{
@@ -39,4 +38,18 @@ overflow: hidden;
     content: "";
     clear: both;
     display: block;
+}
+
+.box{
+    width: 750px;
+    height: 300px;
+    border: solid 1px black;
+    padding: 20px; 
+}
+
+button{
+    shape-margin: 4px;
+}
+footer{
+    float: right;
 }

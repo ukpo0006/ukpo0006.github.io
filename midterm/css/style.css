@@ -23,6 +23,7 @@ margin: 0;
 padding: 0;
 overflow: hidden;
 }
+
 .list{
     float: left ;
     display: inline-block;
@@ -34,22 +35,20 @@ overflow: hidden;
     width: 15%;
     padding: 0.5% 0.5%
 }
+/* clears float */
 .clearfix::after{
     content: "";
     clear: both;
     display: block;
 }
-
+/* adds a box to the form */
 .box{
     width: 750px;
     height: 300px;
     border: solid 1px black;
     padding: 20px; 
 }
-
-button{
-    shape-margin: 4px;
-}
+/* floats the text to the right */
 footer{
     float: right;
 }

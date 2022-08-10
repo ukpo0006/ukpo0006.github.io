@@ -11,6 +11,7 @@ header{
     background-color: #c78c06;
 }
 
+/* centers navigation */
 nav{
     color: #ffe6ac;
     text-align: center;
@@ -28,7 +29,7 @@ ul li{
     padding: 5px;
 }
 
-
+/* adds font color to navigation */
 a:link{
     text-decoration: none;
     color: #c78c06;
@@ -46,9 +47,10 @@ a:link{
     width: 90%;
 }
 
+/* puts welcome image in the background */
+
 .welcome{
     background-image: url('/images/main-banner.jpg');
-    background: linear-gradient(rgb(33, 33, 33, .5));
     padding: 5rem 0;
     margin: 0;
     background-position: center;
@@ -56,13 +58,6 @@ a:link{
     background-repeat: no-repeat;
 }
 
-/* .welcome{
-    background: url("/images/main-banner.jpg");
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    bac
-} */
 
 .welcome h1{
     color: white;
@@ -75,11 +70,36 @@ a:link{
     color: white;
     font-size: small;
     background-color: rgb(33, 33, 33, .5); 
+    margin-bottom: 20px;
     
 }
 
 .welcome button{
     background-color:#c78c06;
     padding: 10px;
+}
+
+.about img{
+   background-color: #ffe6ac;
+   margin: auto;
+   display: block;
+   width: 100%;
+   margin-bottom: 20px;
+}
+.about{
+    background-color: #ffe6ac;
+    font-size: small;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+.about h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-weight: bold;
 }
 

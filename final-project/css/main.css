@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 header{
     background-color: #c78c06;
 }
@@ -44,7 +45,7 @@ a:link{
    
 }
 .search{
-    width: 90%;
+    width: 80%;
 }
 
 /* puts welcome image in the background */
@@ -59,7 +60,7 @@ a:link{
     background-repeat: no-repeat;
 }
 
-
+/* makes heading white */
 .welcome h1{
     color: white;
     font-size: 3rem;
@@ -72,14 +73,15 @@ a:link{
     font-size: small;
     background-color: rgb(33, 33, 33, .5); 
     margin-bottom: 20px;
-    
 }
+/* gives connect button color */
 
 .welcome button{
     background-color:#c78c06;
     padding: 10px;
+    color: #222;
 }
-
+/* gives about section background color */
 .about img{
    background-color: #ffe6ac;
    margin: auto;
@@ -87,6 +89,7 @@ a:link{
    width: 100%;
    margin-bottom: 20px;
 }
+
 .about{
     background-color: #ffe6ac;
     font-size: small;
@@ -97,6 +100,7 @@ a:link{
 .about p {
     margin-bottom: 20px;
 }
+
 .about h2{
     font-size: 30px;
     margin-bottom: 20px;
@@ -104,3 +108,46 @@ a:link{
     font-weight: bold;
 }
 
+.project{
+    margin: 0 auto;
+    width: 95%;
+    background-color: #ffe6ac;
+    margin-top: 20px;
+}
+.services{
+    background-color:white;
+}
+
+.services > div{
+    padding: 1rem;
+}
+.services h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.services img{
+    display: block;
+    width: 98%;
+}
+
+.services h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 5px;
+}
+
+.services p{
+    font-size: small;
+    padding: 15px;
+}
+
+.services button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}

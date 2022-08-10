@@ -7,4 +7,41 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+header{
+    background-color: #c78c06;
+}
+
+nav{
+    color: #ffe6ac;
+    text-align: center;
+    background-color: #222;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    justify-content: space-evenly;
+    padding: 10%;
+}
+
+a:link{
+    text-decoration: none;
+    color: #c78c06;
+    padding: 8px 16px;
+    margin: 0;
+
+}
+
+.fa-magnifying-glass{
+    background-color: #222;
+    color: #c78c06;
+   
+}
+.search{
+    width: 90%;
+}
+
+
 

@@ -50,7 +50,7 @@ a:link{
 /* puts welcome image in the background */
 
 .welcome{
-    background-image: url('/images/main-banner.jpg');
+    background-image: url('../images/main-banner.jpg');
     padding: 5rem 0;
     margin: 0;
     background-position: center;

@@ -51,6 +51,7 @@ a:link{
 
 .welcome{
     background-image: url('../images/main-banner.jpg');
+    height: 120px;
     padding: 5rem 0;
     margin: 0;
     background-position: center;

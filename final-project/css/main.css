@@ -108,31 +108,24 @@ a:link{
     font-weight: bold;
 }
 
-.project{
+.services{
     margin: 0 auto;
     width: 95%;
     background-color: #ffe6ac;
 }
-.services{
-    background-color:white;
-    display: grid;
-}
 
-.services > div{
-    padding: 1rem;
-    margin-bottom: 10px;
-}
 
 .services h2{
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 .services img{
-    display: block;
-    width: 98%;
+    width: 100%;
+
 }
 
 .services h3{
@@ -156,8 +149,8 @@ a:link{
 
 .vision{
     background-image: url("/images/vision.jpg");
-    height: 50%;
-    padding: 2rem 0;
+    height: 100%;
+    padding: 0.5rem 0;
     margin: 0;
     background-position: center;
     background-size: cover;
@@ -175,6 +168,7 @@ a:link{
     color: white;
     font-size: 10px;
     padding: 10px;
+    line-height: 15px;
 }
 .vision button{
     border-color:#c78c06;
@@ -184,4 +178,41 @@ a:link{
     font-size: small;
     color: white;
 }
+
+.team{
+    margin: 0 auto;
+    width: 95%;
+    background-color: #ffe6ac;
+}
+
+.team img{
+    width: 100%;
+    padding: 10px;
+}
+
+.team h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.team h4{
+    font-size: large;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.team h6{
+    font-size: small;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.team p{
+    font-size: smaller;
+    line-height: 15px;
+}
+
 

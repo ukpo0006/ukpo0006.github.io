@@ -148,7 +148,7 @@ a:link{
 }
 
 .vision{
-    background-image: url("/images/vision.jpg");
+    background-image: url("../images/vision.jpg");
     height: 50%;
     padding: 0.5rem 0;
     margin: 0;

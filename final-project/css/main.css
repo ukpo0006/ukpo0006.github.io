@@ -9,25 +9,25 @@ body{
 }
 
 header{
-    background-color: #c78c06;
+    background-color:#c78c06;
+}
+.logo{
+    width: 10%;
 }
 
 /* centers navigation */
 nav{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    color: #ffe6ac;
-    text-align: center;
-    background-color: #222;
-    margin: 0;
-    padding: 10px;
-}
+    color: #ffe7ad;
+    background-color: #222;}
+   
 
 ul li{
-    display: flex;
-    padding: 8px 16px;
-    justify-content: space-evenly;
-    padding: 5px;
+    /* display: flex; */ 
+    text-align: center;
+     padding: 20px;
 }
 
 /* adds font color to navigation */
@@ -36,16 +36,22 @@ a:link{
     color: #c78c06;
     padding: 8px 16px;
     margin: 0;
+}
 
+.searchbar{
+    background-color: #222;
 }
 
 .fa-magnifying-glass{
     background-color: #222;
     color: #c78c06;
+    align-items: right;
+    width: 5%;
    
 }
 .search{
     width: 80%;
+    margin: 10px;
 }
 
 /* puts welcome image in the background */
@@ -61,10 +67,10 @@ a:link{
 }
 
 /* makes heading white */
-.welcome h1{
+h1{
     color: white;
     font-size: 3rem;
-    background-color: rgb(33, 33, 33, .5); 
+    background-color: rgba(33, 33, 33, 0.5); 
     padding: 10px;
 }
 
@@ -93,15 +99,15 @@ a:link{
     margin-bottom: 20px;
 }
 
-
-.about h2{
+h2{
     font-size: 30px;
-    margin-bottom: 20px;
+    margin: 15px;
     padding: 5px;
     font-weight: bold;
 }
 
 .services{
+    display: grid;
     margin: 0 auto;
     width: 95%;
     background-color: #ffe6ac;
@@ -116,21 +122,21 @@ a:link{
     background-color: white;
 }
 
-.services img{
+img{
     width: 100%;
 
 }
 
-.services h3{
+h3{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 30px;
-    line-height: 5px;
+    margin: 10px;
 }
 
-.services p{
+p{
     font-size: small;
     padding: 15px;
+    line-height: 1.2rem;
 }
 
 .services button{
@@ -152,7 +158,7 @@ a:link{
     background-repeat: no-repeat;
 }
 
-.vision h3{
+.vision h4{
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -180,38 +186,11 @@ a:link{
     background-color: #ffe6ac;
 }
 
-.team img{
-    width: 100%;
-    padding: 10px;
-}
-
-.team h2{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-.team h4{
-    font-size: 20px;
-    padding: 5px;
-    font-weight: bold;
-}
-
-.team h6{
+h5{
     font-size: 12px;
-    font-weight: bold;
-    padding-bottom: 15px;
-    padding: 5px;
+    margin: 10px;
 }
 
-.team p{
-    font-size: smaller;
-    line-height: 15px;
-    padding: 10px;
-    padding-bottom: 5px;
-}
 
 .contact{
     margin: 0 auto;
@@ -219,16 +198,6 @@ a:link{
     padding: 5px;
 }
 
-.contact h3{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.contact h4{
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
 
 .contact form{
     height: 100%;
@@ -269,11 +238,6 @@ iframe{
     height: 300px;
 }
 
-.map h4{
-    font-size: 20px;
-    padding: 10px 10px;
-    margin-top: 10px;
-}
 
 footer{
     color: #c78c06;
@@ -292,8 +256,8 @@ footer q{
 
 @media screen and (min-width: 760px){
     .media{
-        width: 1200px;
-        padding: 0;
+        /* width: 1200px; */
+        padding: 0 auto;
     }
 
     header{
@@ -301,20 +265,24 @@ footer q{
     }
 
     .navigation{
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        flex-flow: row wrap;
     }
 
    .welcome{
        padding: 4rem;
    }
 
+   .welcome p{
+       padding: 4rem;
+   }
+
    .about{
-       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(1, 1fr);
+       display: flex;
+      flex-wrap: wrap;
+   }
+
+   .about img{
+       width: 50%
    }
 
     .services div:nth-child(1) {grid-area: p1;}
@@ -333,5 +301,46 @@ footer q{
         "p3 p3 p4 p4 p5 p5";
         }
 
-}
+    .team img:nth-child(1) {grid-area: p1;}
+    .team div:nth-child(2) {grid-area: p2;}
+    .team img:nth-child(3) {grid-area: p3;}
+    .team div:nth-child(4) {grid-area: p4;}
+
+     .team{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "p1 p2"
+        "p4 p3";}
+
+        .contact{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+        
+        .contact .form{
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            width: 35rem
+        
+        }
+
+        .contact .map{
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
+            width: 30rem;
+        }
+
+        .contact .hours{
+            padding: 40px;
+            grid-column: 1 / 3;
+            grid-row: 4 / 6;
+        }
+    }
+   
+
 

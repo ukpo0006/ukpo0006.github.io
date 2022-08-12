@@ -17,10 +17,11 @@ header{
 
 /* centers navigation */
 
-.navigation{
+/* .navigation{
     display: flex;
-}
+} */
 nav{
+    display: flex;
     flex-direction: column;
     color: #ffe7ad;
     background-color: #222;}
@@ -47,13 +48,10 @@ a:link{
 .fa-magnifying-glass{
     background-color: #222;
     color: #c78c06;
-    align-items: right;
-    width: 5%;
    
 }
 .search{
-    width: 80%;
-    margin: 10px;
+    width: 70%;
 }
 
 /* puts welcome image in the background */
@@ -100,14 +98,14 @@ h1{
     line-height: 20px;
     margin-bottom: 20px;
 }
-
+ /* all h2 formatting */
 h2{
     font-size: 30px;
     margin: 15px;
     padding: 5px;
     font-weight: bold;
 }
-
+/* our services color */
 .services{
     display: grid;
     margin: 0 auto;
@@ -115,7 +113,7 @@ h2{
     background-color: #ffe6ac;
 }
 
-
+/* services white container */
 .serv{
     font-size: 30px;
     font-weight: bold;
@@ -123,23 +121,24 @@ h2{
     margin-bottom: 10px;
     background-color: white;
 }
-
+/* size for all images */
 img{
     width: 100%;
 
 }
-
+/* all h3 formatting*/
 h3{
     font-size: 20px;
     font-weight: bold;
     margin: 10px;
 }
-
+/* all p formatting */
 p{
     font-size: small;
     padding: 15px;
     line-height: 1.2rem;
 }
+/* all buttons under services */
 
 .services button{
     background-color: black;
@@ -148,6 +147,7 @@ p{
     margin-bottom: 20px;
 }
 
+/* puts vision image in the background */
 .vision{
     background-image: url("../images/vision.jpg");
     height: 100%;
@@ -160,6 +160,7 @@ p{
     background-repeat: no-repeat;
 }
 
+/* vision heading and p */
 .vision h4{
     color: white;
     font-size: 1.5rem;
@@ -173,6 +174,8 @@ p{
     padding: 10px;
     line-height: 15px;
 }
+
+/* givs vision button color */
 .vision button{
     border-color:#c78c06;
     background-color: #222;
@@ -181,7 +184,7 @@ p{
     font-size: small;
     color: white;
 }
-
+/* team div */
 .team{
     margin: 0 auto;
     width: 95%;
@@ -193,7 +196,7 @@ h5{
     margin: 10px;
 }
 
-
+/* contact div */
 .contact{
     margin: 0 auto;
     margin-top: 50px;
@@ -256,6 +259,8 @@ footer q{
     text-decoration-line: underline;
 }
 
+/* for a screen between 760 and 1200px. 1200px is the container size */
+
 @media screen and (min-width: 760px) and 
 (max-width: 1200px) {
     .media{
@@ -267,11 +272,13 @@ footer q{
         background-color: #222;
     }
 
-    .navigation{
+    .navigation ul {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+
     }
+
+/*  */
 
    .welcome{
        padding: 4rem;
@@ -280,6 +287,8 @@ footer q{
    .welcome p{
        padding: 4rem;
    }
+
+/* creates template for about */
 
    .about{
        display: flex;
@@ -291,6 +300,8 @@ footer q{
    .about img{
        height: 100%;
    }
+
+   /* creates template for services */
 
     .services div:nth-child(1) {grid-area: p1;}
     .services div:nth-child(2) {grid-area: p2;}
@@ -308,6 +319,8 @@ footer q{
         "p3 p3 p4 p4 p5 p5";
         }
 
+        /* creates template team */
+
     .team img:nth-child(1) {grid-area: p1;}
     .team div:nth-child(2) {grid-area: p2;}
     .team img:nth-child(3) {grid-area: p3;}
@@ -321,6 +334,8 @@ footer q{
         "p1 p2"
         "p4 p3";}
 
+        /* creates template for contact */
+        
         .contact{
             display: grid;
             grid-template-columns: repeat(3, 1fr);

@@ -113,14 +113,9 @@ h2{
     background-color: #ffe6ac;
 }
 
+
 /* services white container */
-.serv{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background-color: white;
-}
+
 /* size for all images */
 img{
     width: 100%;
@@ -261,11 +256,10 @@ footer q{
 
 /* for a screen between 760 and 1200px. 1200px is the container size */
 
-@media screen and (min-width: 760px) and 
-(max-width: 1200px) {
+@media screen and (min-width: 760px) {
     .media{
-        /* width: 1200px; */
-        padding: 0 auto;
+        width: 1200px;
+    
     }
 
     header{
